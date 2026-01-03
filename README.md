@@ -10,7 +10,6 @@ A Chrome Extension (Manifest V3) that provides real-time tab analytics and visua
 
 ### Memory Usage Monitoring
 - **High Memory Detection**: Automatically identifies the top 3 memory-consuming tabs
-- **Visual Indicators**: Red gradient borders highlight high-memory tabs (darkest red = highest usage)
 - **Memory Estimates**: Real-time estimation based on site characteristics and tab state
 
 ### Audio Activity Detection
