@@ -127,12 +127,12 @@ function createTabItem(tab) {
 
     const openedTime = document.createElement('div');
     openedTime.className = 'time-label';
-    openedTime.innerHTML = `<img src="o1.png" class="time-icon-img" alt="Opened"> ${tab.openedAgo}`;
+    openedTime.innerHTML = `<img src="icons/o1.png" class="time-icon-img" alt="Opened"> ${tab.openedAgo}`;
     timeInfo.appendChild(openedTime);
 
     const viewedTime = document.createElement('div');
     viewedTime.className = 'time-label';
-    viewedTime.innerHTML = `<img src="e1.png" class="time-icon-img" alt="Viewed"> ${tab.lastViewedAgo}`;
+    viewedTime.innerHTML = `<img src="icons/e1.png" class="time-icon-img" alt="Viewed"> ${tab.lastViewedAgo}`;
     timeInfo.appendChild(viewedTime);
 
     item.appendChild(timeInfo);
