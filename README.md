@@ -54,12 +54,43 @@ Memory usage is estimated based on:
 
 ## Installation
 
-### From Source
-1. Clone or download this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" (toggle in top right)
-4. Click "Load unpacked"
-5. Select the `Tab Analytics` directory
+### Quick Setup Guide
+
+Follow these steps to install and run the Tab Analytics Chrome Extension:
+
+#### Step 1: Download the Extension
+```bash
+# Clone the repository
+git clone https://github.com/HarsH-1877/Browser-Tabs-Analytics---Chrome-Extension.git
+
+# Or download as ZIP and extract
+```
+
+#### Step 2: Load Extension in Chrome
+1. **Open Chrome Extensions Page**
+   - Open Google Chrome browser
+   - Navigate to `chrome://extensions/` in the address bar
+   - Or click the three-dot menu → More Tools → Extensions
+
+2. **Enable Developer Mode**
+   - Look for the "Developer mode" toggle in the top-right corner
+   - Click to enable it (it should turn blue/active)
+
+3. **Load the Extension**
+   - Click the "Load unpacked" button that appears after enabling Developer mode
+   - Navigate to the folder where you cloned/extracted the repository
+   - Select the `Tab Analytics` folder (or `Browser-Tabs-Analytics---Chrome-Extension` if you cloned it)
+   - Click "Select Folder"
+
+4. **Verify Installation**
+   - The extension should now appear in your extensions list
+   - You should see the Tab Analytics icon in your Chrome toolbar
+   - If the icon is not visible, click the puzzle piece icon in the toolbar and pin Tab Analytics
+
+#### Step 3: Start Using the Extension
+- Click the Tab Analytics icon in your Chrome toolbar
+- The popup will display all your open tabs with real-time analytics
+- Toggle between light and dark themes using the theme switcher
 
 ### File Structure
 ```
@@ -74,10 +105,42 @@ Tab Analytics/
 
 ## Usage
 
-1. **Install the extension** using the instructions above
-2. **Click the extension icon** in your Chrome toolbar to view analytics
-3. **View daily statistics** including tabs opened, closed, peak count, and memory freed
-4. **Check visual indicators** to understand audio activity and memory usage
+### Using the Extension
+
+1. **Open the Popup**
+   - Click the Tab Analytics icon in your Chrome toolbar
+   - The popup displays all currently open tabs
+
+2. **View Tab Analytics**
+   - **Daily Stats**: See tabs opened, closed, peak count, and memory freed today
+   - **Red Borders**: Top 3 memory-consuming tabs (darkest = highest usage)
+   - **Blue Border**: Tab not viewed for the longest time
+   - **Audio Badge**: 🔊 icon on tabs playing audio
+   - **Time Information**: View how long each tab has been open and when last viewed
+
+3. **Interact with Tabs**
+   - **Click any tab card** to switch to that tab
+   - **Click the X button** on a tab card to close that tab
+   - **Toggle theme** using the switch in the top-right corner
+
+### Troubleshooting
+
+**Extension not appearing in toolbar:**
+- Click the puzzle piece icon (Extensions) in Chrome toolbar
+- Find "Tab Analytics" and click the pin icon to pin it
+
+**Popup shows no tabs:**
+- Refresh the page or close and reopen the popup
+- Make sure you have at least one tab open
+
+**Time tracking not persisting:**
+- The extension stores data locally using Chrome's storage API
+- Data should persist across browser restarts and sleep mode
+- If data is lost, check Chrome's storage quota in `chrome://extensions/`
+
+**Memory estimates seem incorrect:**
+- Memory values are estimates based on site characteristics
+- Actual memory usage may vary depending on your system and Chrome version
 
 ## Privacy
 
