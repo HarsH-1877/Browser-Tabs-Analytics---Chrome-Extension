@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Analytics</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <div>
+          <h1>Tab Analytics</h1>
+          <p class="subtitle">Today's Usage Statistics</p>
+        </div>
+        <label class="theme-toggle" title="Toggle theme">
+          <input type="checkbox" id="themeToggle" hidden>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <!-- Daily Statistics -->
+      <section class="stats-section">
+        <div class="stat-card">
+          <div class="stat-icon">📂</div>
+          <div class="stat-content">
+            <div class="stat-value" id="tabsOpened">0</div>
+            <div class="stat-label">Tabs Opened</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">✖️</div>
+          <div class="stat-content">
+            <div class="stat-value" id="tabsClosed">0</div>
+            <div class="stat-label">Tabs Closed</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">📈</div>
+          <div class="stat-content">
+            <div class="stat-value" id="peakTabs">0</div>
+            <div class="stat-label">Peak Tabs</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">💾</div>
+          <div class="stat-content">
+            <div class="stat-value" id="memoryFreed">0 MB</div>
+            <div class="stat-label">Memory Freed</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab List Header -->
+      <section class="tabs-header">
+        <h2>Open Tabs (<span id="currentTabs">0</span>)</h2>
+        <div class="legend-inline">
+          <span class="legend-badge memory-high">🔴 High Memory</span>
+          <span class="legend-badge oldest">🔵 Oldest</span>
+        </div>
+      </section>
+
+      <!-- Scrollable Tab List -->
+      <section class="tabs-list" id="tabsList">
+        <!-- Tabs will be dynamically inserted here -->
+      </section>
+
+      <!-- Info Message -->
+      <section class="info-section">
+        <p class="info-text">
+          Click any tab to switch to it. All data stored locally.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-text">Tab Analytics v2.0.0</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
