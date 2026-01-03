@@ -28,8 +28,6 @@ Comprehensive daily metrics including:
 - **Peak Tabs**: Maximum concurrent tabs reached today
 - **Memory Freed**: Estimated memory recovered from closed tabs
 
-All analytics automatically reset at local midnight.
-
 ## Technical Implementation
 
 ### Architecture
@@ -146,7 +144,6 @@ Tab Analytics/
 - **100% Local**: All data is processed and stored locally on your device
 - **No External APIs**: No data leaves your browser
 - **No Tracking**: No analytics or telemetry sent to external servers
-- **Automatic Reset**: Data automatically resets at midnight
 
 ## Performance
 
