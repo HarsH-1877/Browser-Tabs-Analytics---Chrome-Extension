@@ -4,25 +4,25 @@ A Chrome Extension (Manifest V3) that provides real-time tab analytics and visua
 
 ## Features
 
-### 🎨 Dark/Light Theme Toggle
-Modern theme switcher with persistent preference and sleek design.
+### Time Tracking
+- **First Opened**: Track when each tab was initially opened with persistent timestamps that survive browser restarts and sleep mode
+- **Last Viewed**: Monitor when each tab was last accessed to identify inactive tabs
 
-### 📋 Visual Tab List
-Interactive list of all open tabs with click-to-switch functionality.
+### Memory Usage Monitoring
+- **High Memory Detection**: Automatically identifies the top 3 memory-consuming tabs
+- **Visual Indicators**: Red gradient borders highlight high-memory tabs (darkest red = highest usage)
+- **Memory Estimates**: Real-time estimation based on site characteristics and tab state
 
-### 🔴 High Memory Usage Indicators
-Top 3 memory-consuming tabs highlighted with red gradient borders (darkest to lightest).
+### Audio Activity Detection
+- **Active Audio Monitoring**: Detects and displays which tabs are currently playing audio
+- **Visual Badges**: Clear audio indicators on active tabs
 
-### 🔵 Oldest Tab Highlighting
-Blue border on the tab that hasn't been viewed for the longest time.
+### Visual Color Coding
+- **Red Gradient Borders**: Top 3 memory-consuming tabs (darkest to lightest)
+- **Blue Border**: Tabs not viewed for the longest time
+- **Theme Support**: Dark and light mode with persistent preferences
 
-### 🔊 Audio Activity Detection
-Visual badges for tabs currently playing audio.
-
-### ⏱️ Persistent Time Tracking
-Track how long each tab has been open with "Opened X ago" tooltips. **Tab creation times persist across laptop sleep and browser restarts.**
-
-### 📊 Daily Tab Usage Analytics
+### Daily Analytics Dashboard
 Comprehensive daily metrics including:
 - **Tabs Opened**: Total number of new tabs created today
 - **Tabs Closed**: Total number of tabs closed today
