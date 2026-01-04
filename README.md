@@ -106,6 +106,7 @@ Tab Analytics/
 
 1. **Open the Popup**
    - Click the Tab Analytics icon in your Chrome toolbar
+   - Or use the keyboard shortcut: **`Ctrl + Shift + E`** (Windows/Linux) or **`Cmd + Shift + E`** (Mac)
    - The popup displays all currently open tabs
 
 2. **View Tab Analytics**
@@ -119,6 +120,12 @@ Tab Analytics/
    - **Click any tab card** to switch to that tab
    - **Click the X button** on a tab card to close that tab
    - **Toggle theme** using the switch in the top-right corner
+
+4. **Customize Keyboard Shortcut** (Optional)
+   - Go to `chrome://extensions/shortcuts`
+   - Find "Tab Analytics"
+   - Click the pencil icon next to "Open Tab Analytics"
+   - Set your preferred key combination
 
 ### Troubleshooting
 
